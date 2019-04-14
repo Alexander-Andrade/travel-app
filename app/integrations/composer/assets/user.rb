@@ -12,7 +12,7 @@ module Composer
       end
 
       def show
-        Faraday.get "#{url_base}/#{record.email}"
+        JSON.parse(Faraday.get("#{url_base}/#{record.email}").body)
       end
       
       protected
