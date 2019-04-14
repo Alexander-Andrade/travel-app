@@ -1,12 +1,12 @@
 module Composer
   module Assets
-    class Host < BaseAsset
+    class Guest < BaseAsset
       def url_base
-        "#{COMPOSER[:url]}/host"
+        "#{COMPOSER[:url]}/guest"
       end
 
       def composer_clazz
-        COMPOSER_CLASS[:HOST]
+        COMPOSER_CLASS[:GUEST]
       end
     end
   end
