@@ -1,0 +1,8 @@
+default: &default
+  url: http://localhost:3000/api/
+
+development: &development
+  <<: *default
+
+test: &development
+  <<: *default
